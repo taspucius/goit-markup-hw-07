@@ -3,15 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       integrity="sha512-..."
       crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,16 +38,14 @@
       <section class="top-line">
         <div class="container">
           <span class="logo">
-            <a class="web-logo" href="index.html" type="button">WEB</a>
-            <a class="studio-logo" href="index.html" type="button">STUDIO</a>
+            <a class="web-logo" href="index.html">WEB</a>
+            <a class="studio-logo" href="index.html">STUDIO</a>
           </span>
           <nav>
             <span class="nav-menu">
-              <a class="nav-studio" href="index.html" type="button">Studio</a>
-              <a class="nav-portfolio" href="portfolio.html" type="button"
-                >Portfolio</a
-              >
-              <a class="nav-contacts" href="" type="button">Contacts</a>
+              <a class="nav-studio" href="index.html">Studio</a>
+              <a class="nav-portfolio" href="portfolio.html">Portfolio</a>
+              <a class="nav-contacts" href="">Contacts</a>
             </span>
           </nav>
           <span class="email-phone">
@@ -72,49 +66,65 @@
               for Your Business
             </h1>
             <div class="button">
-              <button type="button" class="order-service" data-modal-open>Order Service</button>
+              <button type="button" class="order-service" data-modal-open>
+                Order Service
+              </button>
             </div>
           </section>
-        </section>
-        </div>
-        <div class="modal is-hidden" data-modal>
-          <div class="modal-content">
-           <button class="close-btn" data-modal-close>
-              <svg><use href="./close-btn/symbol-defs.svg#icon-close-black"></use></svg>
-            </button>
-            <strong><span class="modal-headline">Leave your contacts and we will call you back</span></strong>
-            <form action=# class="modal-form">
-              <div class="form-group">
-                <label class="form-label" for="Name">Name<i class="fa-solid fa-user"></i>
-                <input type="text" id="Name">
-                </label>
-                 <label class="form-label" for="phone">Phone<i class="fa-solid fa-phone"></i>
-                <input  type="tel" id="phone">
-              </label>
-                <label class="form-label" for="email">Email<i class="fa-solid fa-envelope"></i>
-
-                <input class="form-email" type="email" id="email">
-                </label>
-                <label class="form-label" for="textbox">Comment</label>
-                <textarea id="textbox" name="Comment" placeholder="   Text Input"></textarea>        
-               </div>
-            <div class="form-checkbox">
-              <input class="checkbox-text" id="checkbox" type="checkbox">
-            <p class="checkbox-text">I accept the terms and conditions of the</p> <a class="checkbox-ref" href="">Privacy Policy</a>
-            </div>
-            <input id="submit-button" type="submit" value="Send">
-          </div>
-        </form>
         </div>
       </section>
-      
+      <div class="modal is-hidden" data-modal>
+        <div class="modal-content">
+          <button class="close-btn" data-modal-close>
+            <svg>
+              <use href="./close-btn/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <strong
+            ><span class="modal-headline"
+              >Leave your contacts and we will call you back</span
+            ></strong
+          >
+          <form action="#" class="modal-form">
+            <div class="form-group">
+              <label class="form-label" for="Name"
+                >Name<i class="fa-solid fa-user"></i>
+                <input type="text" id="Name" />
+              </label>
+              <label class="form-label" for="phone"
+                >Phone<i class="fa-solid fa-phone"></i>
+                <input type="tel" id="phone" />
+              </label>
+              <label class="form-label" for="email"
+                >Email<i class="fa-solid fa-envelope"></i>
+
+                <input class="form-email" type="email" id="email" />
+              </label>
+              <label class="form-label" for="textbox">Comment</label>
+              <textarea
+                id="textbox"
+                name="Comment"
+                placeholder="   Text Input"
+              ></textarea>
+            </div>
+            <div class="form-checkbox">
+              <input class="checkbox-text" id="checkbox" type="checkbox" />
+              <p class="checkbox-text">
+                I accept the terms and conditions of the
+              </p>
+              <a class="checkbox-ref" href="">Privacy Policy</a>
+            </div>
+            <input id="submit-button" type="submit" value="Send" />
+          </form>
+        </div>
+      </div>
 
       <!-- Section 1 & 2 -->
       <section class="section1-2">
         <div class="container">
           <section class="section94px">
             <section class="section1" title="Section1">
-              <span class="feature1">
+              <div class="feature1">
                 <div class="feature-icons">
                   <svg>
                     <use
@@ -127,8 +137,8 @@
                   Our goal is to identify the business problem to walk away with
                   the perfect and creative solution.
                 </p>
-              </span>
-              <span class="feature2">
+              </div>
+              <div class="feature2">
                 <div class="feature-icons">
                   <svg>
                     <use
@@ -141,8 +151,8 @@
                   Bring the key message to the brand's audience for the best
                   price within the shortest possible time.
                 </p>
-              </span>
-              <span class="feature3">
+              </div>
+              <div class="feature3">
                 <div class="feature-icons">
                   <svg>
                     <use
@@ -155,8 +165,8 @@
                   Research and confirm brands that present the strongest digital
                   growth opportunities and minimize risk.
                 </p>
-              </span>
-              <span class="feature4">
+              </div>
+              <div class="feature4">
                 <div class="feature-icons">
                   <svg>
                     <use
@@ -169,7 +179,7 @@
                   Design practice focused on digital experiences. We bring forth
                   a deep passion for problem-solving.
                 </p>
-              </span>
+              </div>
             </section>
 
             <!-- Section 2 -->
@@ -180,7 +190,7 @@
                 <div class="img-1">
                   <img
                     class="size-pictures"
-                    src="./images/img 1.jpg"
+                    src="./images/img1.jpg"
                     alt="Rectangle-71"
                     width="360"
                     height="300"
@@ -189,7 +199,7 @@
                 <div class="img-2">
                   <img
                     class="size-pictures"
-                    src="./images/img 2.jpg"
+                    src="./images/img2.jpg"
                     alt="Rectangle-71"
                     width="360"
                     height="300"
@@ -198,7 +208,7 @@
                 <div class="img-3">
                   <img
                     class="size-pictures"
-                    src="./images/img 3.jpg"
+                    src="./images/img3.jpg"
                     alt="Rectangle-71"
                     width="360"
                     height="300"
@@ -223,7 +233,7 @@
                 <li class="team-card1">
                   <img
                     class="img"
-                    src="./images/Team Card 1.jpg"
+                    src="./images/Team-Card-1.jpg"
                     alt="Mark-Guerrero"
                     width="264"
                     height="260"
@@ -280,7 +290,7 @@
                 <li class="team-card2">
                   <img
                     class="img"
-                    src="./images/Team Card 2.jpg"
+                    src="./images/Team-Card-2.jpg"
                     alt="Tom-Ford"
                     width="264"
                     height="260"
@@ -337,7 +347,7 @@
                 <li class="team-card3">
                   <img
                     class="img"
-                    src="./images/Team Card 3.jpg"
+                    src="./images/Team-Card-3.jpg"
                     alt="Camila-Garcia"
                     width="264"
                     height="260"
@@ -394,7 +404,7 @@
                 <li class="team-card4">
                   <img
                     class="img"
-                    src="./images/Team Card 4.jpg"
+                    src="./images/Team-Card-4.jpg"
                     alt="Daniel-Wilson"
                     width="264"
                     height="260"
@@ -453,48 +463,45 @@
       </section>
 
       <!-- Section 4 -->
- <section class="section-four">
-            <h2>Customers</h2>
-            <div class="customers">
-                <div class="customers-logo">
-                    <svg>
-                        <use href="./clients-icons/symbol-defs.svg#icon-logo-1"></use>
-                    </svg>
-                </div>
-                <div class="customers-logo">
-                    <svg>
-                        <use href="./clients-icons/symbol-defs.svg#icon-logo-2"></use>
-                    </svg>
-                </div>
-                <div class="customers-logo">
-                    <svg>
-                        <use href="./clients-icons/symbol-defs.svg#icon-logo-3"></use>
-                    </svg>
-                </div>
-                <div class="customers-logo">
-                    <svg>
-                        <use href="./clients-icons/symbol-defs.svg#icon-logo-4"></use>
-                    </svg>
-                </div>
-                <div class="customers-logo">
-                    <svg>
-                        <use href="./clients-icons/symbol-defs.svg#icon-logo-5"></use>
-                    </svg>
-                </div>
-                <div class="customers-logo">
-                    <svg>
-                        <use href="./clients-icons/symbol-defs.svg#icon-logo-6"></use>
-                    </svg>
-                </div>
-            </div>
-            </div>
-            </section>
-            </main>
+      <section class="section-four">
+        <h2>Customers</h2>
+        <div class="customers">
+          <div class="customers-logo">
+            <svg>
+              <use href="./clients-icons/symbol-defs.svg#icon-logo-1"></use>
+            </svg>
+          </div>
+          <div class="customers-logo">
+            <svg>
+              <use href="./clients-icons/symbol-defs.svg#icon-logo-2"></use>
+            </svg>
+          </div>
+          <div class="customers-logo">
+            <svg>
+              <use href="./clients-icons/symbol-defs.svg#icon-logo-3"></use>
+            </svg>
+          </div>
+          <div class="customers-logo">
+            <svg>
+              <use href="./clients-icons/symbol-defs.svg#icon-logo-4"></use>
+            </svg>
+          </div>
+          <div class="customers-logo">
+            <svg>
+              <use href="./clients-icons/symbol-defs.svg#icon-logo-5"></use>
+            </svg>
+          </div>
+          <div class="customers-logo">
+            <svg>
+              <use href="./clients-icons/symbol-defs.svg#icon-logo-6"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  
     <!-- Footer -->
 
- 
     <footer>
       <section class="footer">
         <div class="container">
@@ -545,9 +552,7 @@
                       aria-label="facebook-link"
                     >
                       <svg>
-                        <use
-                          href="./icons/symbol-defs.svg#icon-facebook"
-                        ></use>
+                        <use href="./icons/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                     <a
@@ -557,9 +562,7 @@
                       aria-label="linkedin-link"
                     >
                       <svg>
-                        <use
-                          href="./icons/symbol-defs.svg#icon-linkedin"
-                        ></use>
+                        <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </div>
@@ -569,7 +572,7 @@
                   <div class="input-button-container">
                     <input
                       type="email"
-                      id="email"
+                      id="email-footer"
                       name="email"
                       placeholder="E-mail"
                     />
